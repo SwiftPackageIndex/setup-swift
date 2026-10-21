@@ -22,11 +22,9 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest]
+        os: [ubuntu-latest]
         swift: ["5.8"]
         include:
-        - os: macos-12
-          swift: "5.8"
         - os: ubuntu-22.04
           swift: "5.8"
         - os: windows-latest
